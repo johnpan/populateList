@@ -1,0 +1,78 @@
+﻿#modal {
+				display: none; /* initially hide the modal window - display it by JS */
+
+				/* Make the modal window fill the screen */
+				position: fixed;
+				transform: translate(0,0);
+				width: auto; left: 0; right: 0;
+				height: auto; top: 0; bottom: 0;
+				z-index: 990; /* display above everything else */
+
+				background: #transparent; /* no background, just fill space */
+
+				padding: 20px; /* create padding for inner window - page under modal window will be still visible */
+				/* Note: I use pixels to show you that this layout is NOT base on some
+				 * percentage counting (e.g. 2% padding + 96% width makes 100% screen width)
+				 */
+			}
+
+			#modal:target {     /* when URL contains hash of this element... */
+				display: block; /* ... then make it visible */
+			}
+
+			#modal .shade {
+				/* shade creates semi-transparent background for modal window to block clicks on page below */
+				display: block;
+				/* make the shade fill whole screen as well */
+				position: absolute;
+				width: auto; left: 0; right: 0;
+				height: auto; top: 0; bottom: 0;
+				box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box;
+				z-index: 995; /* display between modal container and modal window */
+
+				/* make semi-transparent gray background */
+				opacity: 0.3;
+				background: #222222;
+
+			}
+
+			#modal .outer {
+				/* outer window helps to size inner window to its 100% */
+				box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box;
+				width: 100%;
+				height: 100%;
+				position: relative; /* allows to use z-index to display over shade but still remain non-absolute layout */
+				z-index: 999;
+			}
+
+			#modal .inner {
+				/* inner window in the actual modal window with backround, border, etc. */
+				box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box;
+				width: 100%;
+				height: auto;       /* allow to fit content (if smaller)... */
+				max-height: 100%;   /* ... but make sure it does not overflow browser window */
+
+				/* allow vertical scrolling if required */
+				overflow-x: hidden;
+				overflow-y: auto;
+
+				/* definition of modal window layout */
+				background: #ffffff;
+				border: 2px solid #222222;
+				border-radius: 16px; /* some nice (modern) round corners */
+				padding: 16px;       /* make sure inner elements does not overflow round corners */
+				/* Note:
+				 *  Scrollbar over round corners may not look good in some browsers
+				 *  so if you expect the content to be long, you better not use them.
+				 */
+			}
+
+			#modal .header { /* allows to position close button to the right */
+				position: relative;
+			}
+
+			#modal a.close {  /* display close link in top right corner */
+				position: absolute;
+				top: 0;
+				right: 0;
+			}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="d9c352c3-75eb-41ca-afb2-b19bdf7a390e" Scope="Web" Title="populateList Feature1" Version="1.0.1.6">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\Default_debug.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\spyreqs.js" />
+    <ElementFile Location="Scripts\spyreqs.min.js" />
+    <ElementFile Location="Scripts\spyreqs.min.js.map" />
+    <ElementFile Location="Scripts\spyreqs_populateList.js" />
+    <ElementFile Location="Scripts\spyreqs_populateList.min.js" />
+    <ElementFile Location="Scripts\spyreqs_populateList.min.js.map" />
+    <ElementFile Location="Scripts\App.min.js" />
+    <ElementFile Location="Scripts\App.min.js.map" />
+    <ElementFile Location="Scripts\es5-shim.min.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\modal.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

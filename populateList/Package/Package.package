@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="870bc507-7da1-48b4-948f-fb84f1ac9d43" 
+        solutionId="870bc507-7da1-48b4-948f-fb84f1ac9d43" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="populateList"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="d9c352c3-75eb-41ca-afb2-b19bdf7a390e" />
+  </features>
+</package>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\spyreqs.js" Url="Scripts/spyreqs.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\spyreqs.min.js" Url="Scripts/spyreqs.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\spyreqs.min.js.map" Url="Scripts/spyreqs.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\spyreqs_populateList.js" Url="Scripts/spyreqs_populateList.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\spyreqs_populateList.min.js" Url="Scripts/spyreqs_populateList.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\spyreqs_populateList.min.js.map" Url="Scripts/spyreqs_populateList.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\App.min.js" Url="Scripts/App.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\App.min.js.map" Url="Scripts/App.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\es5-shim.min.js" Url="Scripts/es5-shim.min.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
